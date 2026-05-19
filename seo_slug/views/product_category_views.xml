@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_public_category_form_inherit_slug" model="ir.ui.view">
+        <name>product.public.category.form.inherit.slug</name>
+        <model>product.public.category</model>
+        <inherit_id ref="website_sale.product_public_category_form_view"/>
+        <arch type="xml">
+            <xpath expr="//field[@name='sequence']" position="after">
+                <field name="s72_seo_name" placeholder="e.g. organic-vegetables"/>
+            </xpath>
+        </arch>
+    </record>
+</odoo>
