@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="categorie_link_slug" inherit_id="website_sale.categorie_link">
+        <xpath expr="//a[@t-att-href]" position="attributes">
+            <attribute name="t-att-href">keep('%s/category/%s' % (shop_path, c.s72_seo_name or slug(c)))</attribute>
+        </xpath>
+    </template>
+</odoo>
