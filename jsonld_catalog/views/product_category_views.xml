@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_category_form_jsonld" model="ir.ui.view">
+        <field name="name">product.public.category.form.jsonld</field>
+        <field name="model">product.public.category</field>
+        <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button
+                        name="action_download_jsonld"
+                        type="object"
+                        string="Download JSON-LD"
+                        class="btn-secondary"
+                        invisible="not id"
+                    />
+                </header>
+            </xpath>
+        </field>
+    </record>
+</odoo>
