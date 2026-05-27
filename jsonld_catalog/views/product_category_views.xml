@@ -10,7 +10,14 @@
                     <button
                         name="action_download_jsonld"
                         type="object"
-                        string="Download JSON-LD"
+                        string="Download JSON"
+                        class="btn-secondary"
+                        invisible="not id"
+                    />
+                    <button
+                        name="action_download_jsonl"
+                        type="object"
+                        string="Download JSONL"
                         class="btn-secondary"
                         invisible="not id"
                     />
